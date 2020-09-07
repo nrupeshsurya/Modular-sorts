@@ -1,11 +1,12 @@
 #include<stdio.h>
+#include<stdlib.h>
 void merge(int arr[],int l, int mid, int r, int n)
 {
     int i=l;
     int j=mid+1;
     int k=l;
     // printf("%d %d %d \n",l,mid,r);
-    int arr1[1000];
+    int *arr1 = (int*)malloc(n*sizeof(int));
     for(int p=0;p<n;p++)
     {
         arr1[p]=arr[p];
